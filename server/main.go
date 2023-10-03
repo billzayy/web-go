@@ -16,9 +16,10 @@ func main() {
 	api := app.Group("/api")
 	{
 		api.GET("/get-all-user", controller.GetUserController)
-		api.GET("/get-user/:id")
-		api.POST("/create-user")
-		app.DELETE("/delete-user")
+		api.GET("/get-user/:id", controller.GetUserById)
+		api.POST("/create-user", controller.CreateUserController)
+		api.PUT("/update-user", controller.UpdateUserController)
+		api.DELETE("/delete-user", controller.DeleteUserController)
 	}
 
 	app.Run(":" + os.Getenv("PORT"))

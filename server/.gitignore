@@ -1,4 +1,4 @@
 vendor
-.env
+/tmp
 /database/mysql
 /database/db

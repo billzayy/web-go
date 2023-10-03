@@ -9,7 +9,7 @@ import (
 	"github.com/joho/godotenv"
 )
 
-func GetUser() ([]models.User, error) {
+func GetAllUser() ([]models.User, error) {
 	godotenv.Load()
 
 	DBSrc, err := sql.Open("mysql", os.Getenv("DBPATH"))
@@ -36,6 +36,38 @@ func GetUser() ([]models.User, error) {
 		}
 
 		userList = append(userList, list)
+	}
+
+	return userList, nil
+}
+
+func GetUserById(id int) (models.User, error) {
+	godotenv.Load()
+
+	DBSrc, err := sql.Open("mysql", os.Getenv("DBPATH"))
+
+	if err != nil {
+		return models.User{}, err
+	}
+
+	db, err := DBSrc.Query("SELECT * FROM User Where Id = ?", id)
+
+	if err != nil {
+		return models.User{}, err
+	}
+
+	var userList models.User
+
+	for db.Next() {
+		var list models.User
+
+		err := db.Scan(&list.Id, &list.UserName, &list.Password, &list.Email)
+
+		if err != nil {
+			return models.User{}, err
+		}
+
+		userList = list
 	}
 
 	return userList, nil
