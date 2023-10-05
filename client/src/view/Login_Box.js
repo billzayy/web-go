@@ -5,7 +5,7 @@ import "../css/Login_Box.css"
 function LoginBox() { 
     return (
         <div className="login-box">
-            <div className="login-right">
+            <div className="login-left">
                 <div className="logo-box">
                     <img className="logo-login" src={Logo} alt="logo" />
                     <p className="logo-name"> Login </p>
@@ -29,7 +29,7 @@ function LoginBox() {
                             <p className="checkbox-title"> Remember me </p>
                         </div>
                         <div className="forget-btn">
-                            <a href="/">Forgot password</a>
+                            <p href="/">Forgot password</p>
                         </div>
                     </div>
                     <div className="buttons-login">
@@ -39,12 +39,12 @@ function LoginBox() {
                 </div>
                 <div className="login-options">
                     <p className="options-title">Or, login with</p>
-                    <a href="test" className="options-fb">Facebook</a>
-                    <a href="test" className="options-linkedIn">Linked In</a>
-                    <a href="test" className="options-google">Google</a>
+                    <p className="options-fb">Facebook</p>
+                    <p className="options-linkedIn">Linked In</p>
+                    <p className="options-google">Google</p>
                 </div>
             </div>
-            <div className="login-left">
+            <div className="login-right">
                 <img className="day-image" src={DayImg} alt="Day Travel"/>
             </div>
         </div>

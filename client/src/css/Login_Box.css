@@ -1,28 +1,63 @@
 .login-box{
-    background-color: #ffff;
+    /* background-color: #ffff; */
+    /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.49);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.3px);
+        -webkit-backdrop-filter: blur(7.3px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
     width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-between;
-    border: 1px solid black;
     border-radius: 24px;
 }
 
-.login-right, .login-left {
-    border: 1px solid red;
+/* .login-right, .login-left {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    
+} */
+
+.login-left{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 90%;
+    padding: 2.5rem;
 }
 
 .day-image{
-    width: 50%;
+    width: 80%;
 }
 
-.login-left {
+.login-right {
     background-color: #F5DBC4;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120%;
+}
+
+.logo-box{
+    display: flex;
+}
+
+.login-fill-option{
+    display: flex;
+}
+
+.remember-btn{
+    display: flex;
+}
+
+.login-options{
+    display: flex;
 }
