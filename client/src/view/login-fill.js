@@ -1,3 +1,5 @@
+import getUser from '../controller/login'
+
 function LoginFill() { 
     return (
         <div className="login-fill">
@@ -19,7 +21,7 @@ function LoginFill() {
                 </div>
             </div>
             <div className="buttons-login">
-                <button className="login-btn"> Login </button>
+                <button className="login-btn" onClick={getUser}> Login </button>
                 <button className="signup-btn"> Sign Up </button>
             </div>
         </div>

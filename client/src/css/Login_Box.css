@@ -114,12 +114,20 @@
     accent-color: #029664;
 }
 
+.checkbox:hover{
+    cursor: pointer;
+}
+
 .checkbox-title{
     margin-left: 5px;
 }
 
 .forget-btn{
     text-decoration: underline;
+}
+
+.forget-btn:hover{
+    cursor: pointer;
 }
 
 .login-options{
@@ -133,7 +141,7 @@
     color: #355B3E;
 }
 
-[class^="options"]:hover{
+[class^="options-"]:hover{
     cursor: pointer;
 }
 
