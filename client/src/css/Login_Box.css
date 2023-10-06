@@ -1,13 +1,12 @@
 .login-box{
-    /* background-color: #ffff; */
-    /* From https://css.glass */
-        background: rgba(255, 255, 255, 0.49);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(7.3px);
-        -webkit-backdrop-filter: blur(7.3px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 70%;
+    background-color: #ffff;
+    /* background: rgba(255, 255, 255, 0.49);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.3px);
+    -webkit-backdrop-filter: blur(7.3px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+    width: 60rem;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,12 +27,14 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    width: 90%;
-    padding: 2.5rem;
+    width: 55rem;
+    padding: 0 3rem 1rem 3rem;
+    color: #58745E;
 }
 
 .day-image{
-    width: 80%;
+    width: 400px;
+    height: 300px;
 }
 
 .login-right {
@@ -48,6 +49,42 @@
 
 .logo-box{
     display: flex;
+    /* border: 1px solid red; */
+    width: 100%;
+    align-items: center;
+}
+
+.logo-login{
+    width: 10%;
+    height: 40%;
+    /* border: 1px solid blue; */
+}
+
+.logo-name{
+    color: #355B3E;
+    font-weight: bolder;
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.title-quotes{
+    color: #355B3E;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.title-greeting{
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+.email-fill-title{
+    color: #355B3E;
+}
+
+.password-fill-title{
+    color: #355B3E;
 }
 
 .login-fill-option{
@@ -60,4 +97,8 @@
 
 .login-options{
     display: flex;
+}
+
+.options-fb, .options-linkedIn, .options-google {
+    color: #355B3E;
 }
