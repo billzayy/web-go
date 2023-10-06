@@ -1,12 +1,12 @@
 .login-box{
-    background-color: #ffff;
-    /* background: rgba(255, 255, 255, 0.49);
+    /* background-color: #ffff; */
+    background: rgba(255, 255, 255, 0.49);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.3px);
     -webkit-backdrop-filter: blur(7.3px);
-    border: 1px solid rgba(255, 255, 255, 0.3); */
-    width: 60rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 65rem;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -28,7 +28,7 @@
     align-items: left;
     justify-content: center;
     width: 55rem;
-    padding: 0 3rem 1rem 3rem;
+    padding: 0 6rem 1rem 3rem;
     color: #58745E;
 }
 
@@ -49,7 +49,6 @@
 
 .logo-box{
     display: flex;
-    /* border: 1px solid red; */
     width: 100%;
     align-items: center;
 }
@@ -57,13 +56,11 @@
 .logo-login{
     width: 10%;
     height: 40%;
-    /* border: 1px solid blue; */
 }
 
 .logo-name{
     color: #355B3E;
     font-weight: bolder;
-    /* border: 1px solid blue; */
     margin-left: 10px;
     font-size: 30px;
 }
@@ -77,28 +74,108 @@
 .title-greeting{
     font-size: 15px;
     font-weight: lighter;
+    margin-top: -0.6rem
 }
 
-.email-fill-title{
+[class^="fill-title"]{
     color: #355B3E;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.password-fill-title{
+[class^="fill-box"]{
+    width: 110%;
+    height: 25px;
+    padding: 10px 10px; 
     color: #355B3E;
+    font-size: 16.5px;
+    margin-top: -0.5rem;
+    border-radius: 8px;
+    border: 1px solid #B8D6BF;
+}
+
+.login-fill{
+    display: flex;
+    flex-direction: column;
 }
 
 .login-fill-option{
     display: flex;
+    justify-content:space-between;
+    width: 115%;
+    font-size: 14px;
 }
 
 .remember-btn{
     display: flex;
 }
 
+.checkbox{
+    accent-color: #029664;
+}
+
+.checkbox-title{
+    margin-left: 5px;
+}
+
+.forget-btn{
+    text-decoration: underline;
+}
+
 .login-options{
     display: flex;
+    margin: 2rem 0 0 0;
+    justify-content: space-between;
+    font-size: 15px;
 }
 
 .options-fb, .options-linkedIn, .options-google {
     color: #355B3E;
+}
+
+[class^="options"]:hover{
+    cursor: pointer;
+}
+
+.buttons-login{
+    display: flex;
+    width: 115%;
+    justify-content: space-between;
+}
+
+.login-btn, .signup-btn{
+    width: 48%;
+    height: 40px;
+}
+
+.login-btn{
+    background-color: #029664;
+    color: white;
+    border: 0px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.login-btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #029664;
+    border: 1px solid #029664;
+}
+
+.signup-btn{
+    background-color: white;
+    color: #029664;
+    border: 1px solid #029664;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.signup-btn:hover{
+    cursor: pointer;
+    background-color: #029664;
+    color: #ffffff;
+    border: 0px;
 }
