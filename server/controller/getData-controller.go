@@ -9,6 +9,15 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// GetUserController 	godoc
+//
+//	@Summary		Show All User
+//	@Description	get all user
+//	@Tags			User accounts
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.User
+//	@Router			/get-all-user [get]
 func GetUserController(c *gin.Context) {
 	getAllUser, err := routes.GetAllUser()
 
@@ -20,6 +29,16 @@ func GetUserController(c *gin.Context) {
 	}
 }
 
+// GetUserById 	godoc
+//
+//	@Summary		Show User By Id
+//	@Description	get user by id
+//	@Tags			User accounts
+//	@Param			id	path	int	true	"Account ID"
+//	@Accept			json
+//	@Produce		json
+//	@Success		200	{object}	models.User
+//	@Router			/get-user/{id} [get]
 func GetUserById(c *gin.Context) {
 	inputParam, err := strconv.Atoi(c.Param("id"))
 

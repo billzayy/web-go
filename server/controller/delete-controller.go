@@ -10,6 +10,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// DeleteUserController 	godoc
+//
+//	@Summary		Delete User
+//	@Description	Delete user
+//	@Tags			User accounts
+//	@Accept			json
+//	@Produce		json
+//	@Param			userInfo	body		models.DeleteUser	true	"Delete User"
+//	@Success		200			{object}	models.User
+//	@Router			/delete-user [delete]
 func DeleteUserController(c *gin.Context) {
 	var deleteUser models.User
 

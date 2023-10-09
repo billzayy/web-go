@@ -10,6 +10,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// CreateUserController 	godoc
+//
+//	@Summary		Create User
+//	@Description	Create user
+//	@Tags			User accounts
+//	@Accept			json
+//	@Produce		json
+//	@Param			userInfo	body		models.AddUser	true	"New User"
+//	@Success		200			{object}	models.User
+//	@Router			/create-user [post]
 func CreateUserController(c *gin.Context) {
 	var inputCreate models.User
 

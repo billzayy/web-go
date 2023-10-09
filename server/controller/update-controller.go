@@ -10,6 +10,16 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// UpdateUserController 	godoc
+//
+//	@Summary		Update User
+//	@Description	Update user
+//	@Tags			User accounts
+//	@Accept			json
+//	@Produce		json
+//	@Param			userInfo	body		models.User	true	"Update User"
+//	@Success		200			{object}	models.User
+//	@Router			/update-user [put]
 func UpdateUserController(c *gin.Context) {
 	var update models.User
 
