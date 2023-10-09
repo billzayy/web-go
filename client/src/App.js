@@ -1,4 +1,4 @@
-import LoginBox from './view/Login_Box';
+import LoginBox from './modules/Login_Box';
 import './App.css';
 
 function App() {

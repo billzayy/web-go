@@ -1,4 +1,4 @@
-import getUser from '../controller/login'
+import getValueBox from '../../controller/login'
 
 function LoginFill() { 
     return (
@@ -21,7 +21,7 @@ function LoginFill() {
                 </div>
             </div>
             <div className="buttons-login">
-                <button className="login-btn" onClick={getUser}> Login </button>
+                <button type="button" className="login-btn" onClick={getValueBox}> Login </button>
                 <button className="signup-btn"> Sign Up </button>
             </div>
         </div>
